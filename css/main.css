@@ -1,0 +1,115 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #111;
+}
+.movement {
+  height: 500px;
+  width: 500px;
+  background-color: #c8102e;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-250px) translateY(-250px);
+          transform: translateX(-250px) translateY(-250px);
+  left: 50%;
+  top: 50%;
+}
+
+.movement .container {
+  position: absolute;
+  margin-top: 20px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-190px) translateY(-190px);
+          transform: translateX(-190px) translateY(-190px);
+}
+
+/*Far right Line*/
+
+.movement  .container .line-right {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  right: 15px;
+  top: 70px;
+}
+
+/*Far left Line*/
+.movement .container .line-left {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  left: 15px;
+  top: 70px;
+}
+
+
+.movement .container .line-left::before {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-color: #fff;
+  left: 30px;
+  top: 12px;
+  -webkit-transform: rotate(-38deg) skewY(-11deg);
+          transform: rotate(-38deg) skewY(-11deg);
+}
+.movement .container .line-left::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-color: #fff;
+  left: 270px;
+  top: 12px;
+  -webkit-transform: rotate(38deg) skewY(11deg);
+          transform: rotate(38deg) skewY(11deg);
+}
+.movement .container .line-middle {
+  position: absolute;
+  width: 50px;
+  height: 180px;
+  background-color: #fff;
+  left: 165px;
+  bottom: 130px;
+}
+
+
+.movement .container .line-middle::before {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 130px;
+  background-color: #fff;
+  left: -51px;
+  top: 5px;
+  -webkit-transform: rotate(40deg) skewY(11deg);
+          transform: rotate(40deg) skewY(11deg);
+}
+
+.movement .container .line-middle::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 130px;
+  background-color: #fff;
+  left: 51px;
+  top: 5px;
+  -webkit-transform: rotate(-40deg) skewY(-11deg);
+          transform: rotate(-40deg) skewY(-11deg);
+}
